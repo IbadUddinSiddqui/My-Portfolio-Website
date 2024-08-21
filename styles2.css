@@ -257,6 +257,40 @@ footer p {
     font-size: 0.9rem;
 }
 
+
+/* Navabar changes */
+/* Navbar Container */
+.navbar {
+    overflow-x: auto; /* Enable horizontal scrolling */
+    white-space: nowrap; /* Prevent line breaks */
+  }
+  
+  /* List Style */
+  .navbar ul {
+    display: flex; /* Makes the list items appear in a row */
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+  }
+  
+  /* List Items */
+  .navbar ul li {
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Links */
+  .navbar ul li a {
+    display: inline-block;
+    padding: 10px 20px; /* Adjust padding to your preference */
+    text-decoration: none;
+    color: #ffffff; /* Text color */
+  }
+  
+  .navbar ul li a:hover {
+    background-color: #2312b9; /* Hover background color */
+  }
+  
 /* Animations */
 @keyframes fadeIn {
     from { opacity: 0; }
@@ -365,7 +399,27 @@ footer p {
     footer p {
         font-size: 0.8rem;
     }
-}
+
+    /* Changes in navbar */
+    .navbar {
+        overflow-x: auto;
+        white-space: nowrap;
+      }
+    
+      .navbar ul {
+        display: flex;
+        flex-direction: row; /* Ensures the items stay in a row */
+      }
+    
+      .navbar ul li {
+        flex: 1 0 auto; /* Prevents items from shrinking or expanding unevenly */
+      }
+    
+      .navbar ul li a {
+        padding: 10px 15px; /* Adjust the padding for smaller screens */
+      }
+    }
+
 
 /* Media query for very small screens (up to 480px wide) */
 @media (max-width: 480px) {
@@ -408,4 +462,26 @@ footer p {
     footer p {
         font-size: 0.7rem;
     }
-}
+
+
+    /* Changes in navbar */
+    .navbar {
+        overflow-x: auto;
+        white-space: nowrap;
+      }
+    
+      .navbar ul {
+        display: flex;
+        flex-direction: row; /* Keeps items in a row */
+      }
+    
+      .navbar ul li {
+        flex: 1 0 auto; /* Ensures items don't shrink or stretch unevenly */
+      }
+    
+      .navbar ul li a {
+        padding: 8px 10px; /* Adjusted padding for smaller screens */
+        font-size: 14px; /* Optional: Adjust font size for readability on small screens */
+      }
+    }
+
