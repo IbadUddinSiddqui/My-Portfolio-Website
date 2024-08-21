@@ -293,3 +293,119 @@ footer p {
     0%, 100% { transform: scale(1); }
     50% { transform: scale(1.05); }
 }
+/* Media query for mobile devices (up to 768px wide) */
+@media (max-width: 768px) {
+    /* Adjust the header */
+    header {
+        padding: 10px;
+    }
+    nav ul {
+        flex-direction: column;
+        padding: 0;
+    }
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    /* Hero section adjustments */
+    .hero {
+        padding: 60px 20px;
+    }
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+    .hero p {
+        font-size: 1rem;
+    }
+    .proj-btn {
+        padding: 10px 20px;
+    }
+
+    /* Section styling */
+    section {
+        padding: 40px 20px;
+    }
+    h2 {
+        font-size: 2rem;
+    }
+
+    /* Project grid adjustments */
+    .project-grid {
+        grid-template-columns: 1fr; /* Stack projects vertically */
+        gap: 20px;
+    }
+    .project {
+        padding: 10px;
+    }
+
+    /* Skills section adjustments */
+    #skills ul {
+        flex-direction: column;
+        margin-top: 20px;
+    }
+    #skills li {
+        font-size: 1rem;
+        margin: 10px 0;
+    }
+    #skills li img {
+        width: 50px;
+        height: 50px;
+    }
+
+    /* Contact section adjustments */
+    #contact .glass {
+        padding: 20px;
+    }
+    .contact img {
+        width: 40px;
+        height: 40px;
+    }
+
+    /* Footer adjustments */
+    footer p {
+        font-size: 0.8rem;
+    }
+}
+
+/* Media query for very small screens (up to 480px wide) */
+@media (max-width: 480px) {
+    /* Adjust the header */
+    header {
+        padding: 5px;
+    }
+    nav ul li {
+        margin: 5px 0;
+    }
+
+    /* Hero section adjustments */
+    .hero h1 {
+        font-size: 2rem;
+    }
+    .hero p {
+        font-size: 0.9rem;
+    }
+    .proj-btn {
+        padding: 8px 15px;
+    }
+
+    /* Section styling */
+    h2 {
+        font-size: 1.8rem;
+    }
+
+    /* Project grid adjustments */
+    .project {
+        padding: 10px;
+    }
+
+    /* Contact section adjustments */
+    .contact img {
+        width: 30px;
+        height: 30px;
+    }
+
+    /* Footer adjustments */
+    footer p {
+        font-size: 0.7rem;
+    }
+}
